@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186926712252EF5F00B616EE /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 186926702252EF5F00B616EE /* Student.m */; };
 		188EC1BB22521AA20069E07F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EC1BA22521AA20069E07F /* main.m */; };
+		188EC1C8225240040069E07F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EC1C7225240040069E07F /* main.m */; };
+		188EC1CE225241270069E07F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EC1CD225241270069E07F /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,15 +23,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		188EC1C3225240040069E07F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1869266F2252EF5F00B616EE /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		186926702252EF5F00B616EE /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		188EC1B722521AA20069E07F /* ObjectiveCStudy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectiveCStudy; sourceTree = BUILT_PRODUCTS_DIR; };
 		188EC1BA22521AA20069E07F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		188EC1C5225240040069E07F /* 02-static关键字 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "02-static关键字"; sourceTree = BUILT_PRODUCTS_DIR; };
+		188EC1C7225240040069E07F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		188EC1CC225241270069E07F /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		188EC1CD225241270069E07F /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		188EC1B422521AA20069E07F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188EC1C2225240040069E07F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				188EC1B922521AA20069E07F /* ObjectiveCStudy */,
+				188EC1C6225240040069E07F /* 02-static关键字 */,
 				188EC1B822521AA20069E07F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				188EC1B722521AA20069E07F /* ObjectiveCStudy */,
+				188EC1C5225240040069E07F /* 02-static关键字 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +87,18 @@
 				188EC1BA22521AA20069E07F /* main.m */,
 			);
 			path = ObjectiveCStudy;
+			sourceTree = "<group>";
+		};
+		188EC1C6225240040069E07F /* 02-static关键字 */ = {
+			isa = PBXGroup;
+			children = (
+				1869266F2252EF5F00B616EE /* Student.h */,
+				186926702252EF5F00B616EE /* Student.m */,
+				188EC1C7225240040069E07F /* main.m */,
+				188EC1CC225241270069E07F /* Person.h */,
+				188EC1CD225241270069E07F /* Person.m */,
+			);
+			path = "02-static关键字";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +121,23 @@
 			productReference = 188EC1B722521AA20069E07F /* ObjectiveCStudy */;
 			productType = "com.apple.product-type.tool";
 		};
+		188EC1C4225240040069E07F /* 02-static关键字 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188EC1C9225240040069E07F /* Build configuration list for PBXNativeTarget "02-static关键字" */;
+			buildPhases = (
+				188EC1C1225240040069E07F /* Sources */,
+				188EC1C2225240040069E07F /* Frameworks */,
+				188EC1C3225240040069E07F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02-static关键字";
+			productName = "02-static关键字";
+			productReference = 188EC1C5225240040069E07F /* 02-static关键字 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +148,9 @@
 				ORGANIZATIONNAME = "习雄辉";
 				TargetAttributes = {
 					188EC1B622521AA20069E07F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					188EC1C4225240040069E07F = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -109,6 +168,7 @@
 			projectRoot = "";
 			targets = (
 				188EC1B622521AA20069E07F /* ObjectiveCStudy */,
+				188EC1C4225240040069E07F /* 02-static关键字 */,
 			);
 		};
 /* End PBXProject section */
@@ -119,6 +179,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				188EC1BB22521AA20069E07F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188EC1C1225240040069E07F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188EC1CE225241270069E07F /* Person.m in Sources */,
+				188EC1C8225240040069E07F /* main.m in Sources */,
+				186926712252EF5F00B616EE /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +322,22 @@
 			};
 			name = Release;
 		};
+		188EC1CA225240040069E07F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		188EC1CB225240040069E07F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -269,6 +355,15 @@
 			buildConfigurations = (
 				188EC1BF22521AA20069E07F /* Debug */,
 				188EC1C022521AA20069E07F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188EC1C9225240040069E07F /* Build configuration list for PBXNativeTarget "02-static关键字" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188EC1CA225240040069E07F /* Debug */,
+				188EC1CB225240040069E07F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
